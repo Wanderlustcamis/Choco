@@ -1,0 +1,29 @@
+*{
+margin:0px;
+padding: 0px;
+background-color: #410b13;
+}
+
+h2{
+  padding: 0px;
+  margin: 0px;
+  color:#cd5d67;
+  width:800px;
+  text-align: center;
+  padding-left: 470px;
+}
+
+h3{
+  padding: 0px;
+  margin: 0px;
+  color:#cd5d67;
+  text-align: center;
+
+}
+p{
+  text-align: center;
+  color:#ba1f33;
+}
+.info{
+  text-align: center;
+}

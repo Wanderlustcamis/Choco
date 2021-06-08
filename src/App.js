@@ -1,25 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
 
+import './App.css';
+import './index.js';
+import { NavBar } from "./Components/NavBar";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
     </div>
   );
+}
+
+
+window.onscroll = function () { myFunction() };
+
+let navbar = document.getElementById("root");
+let sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    NavBar.classList.add("sticky")
+  } else {
+    NavBar.classList.remove("sticky");
+  }
 }
 
 export default App;

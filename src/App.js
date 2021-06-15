@@ -3,7 +3,7 @@ import './App.css';
 
 import './App.css';
 import './index.js';
-import { NavBar } from "./Components/NavBar";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
